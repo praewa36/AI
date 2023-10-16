@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DO Setpoint Calculation Results</title>
+</head>
+<body>
+    <h1>Computed DO Setpoints:</h1>
+    <ul>
+        {% for key, value in computed_dosetpoints.items() %}
+        <li>Basin {{ key[0] }}, Zone {{ key[1] }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/">Go back to input page</a>
+</body>
+</html>
